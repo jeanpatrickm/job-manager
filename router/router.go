@@ -1,13 +1,18 @@
 package router
 
-import "github.com/gin-gonic/gin"
+import (
+	"github.com/gin-gonic/gin"
+)
 
+// Importar o arquivo de rotas
 func InitializeRouter() {
-	r := gin.Default()
-	r.GET("/ping", func(c *gin.Context) {
-		c.JSON(200, gin.H{
-			"message": "pong",
-		})
-	})
-	r.Run() // listen and serve on 0.0.0.0:8080
+	
+	// Inicializar router
+	router := gin.Default()
+
+	// inicializar rotas
+	InitializeRoutes(router)
+
+	// run server
+	router.Run(":8080")
 }
