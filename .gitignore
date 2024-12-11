@@ -1,0 +1,18 @@
+#binarues
+
+*.exe
+* .ddl
+*. so
+* .dylib
+
+#test binary
+
+*.test
+
+#coverage
+
+*.out
+
+Db folder
+
+db/
