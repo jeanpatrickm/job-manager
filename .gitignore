@@ -1,7 +1,7 @@
-#binarues
+#binaries
 
 *.exe
-* .ddl
+* .dll
 *. so
 * .dylib
 
